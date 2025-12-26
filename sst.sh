@@ -40,7 +40,7 @@ fi
 
 if [[ "${1,,}" == "--update" || "${1,,}" == "-u" ]]; then
   echo -e "\n  [#] Reinstaling..."
-  curl -fsSL "https://raw.githubusercontent.com/hctilg/sst/main/install.sh";
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/hctilg/sst/main/install.sh)"
   wait
   exit;
 fi
