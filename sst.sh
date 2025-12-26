@@ -166,7 +166,7 @@ for ((i=0; i<LENGTH; i++)); do
     TRANSLATED+=$'\n'"${LINE_TRANSLATED}"
   done <<< $PARAGRAPH
 
-  if [[ -z "${LINE//[[:space:]]/}" ]]; then
+  if [[ -z "${TRANSLATED//[[:space:]]/}" ]]; then
     TRANSLATED=$(translate "$PARAGRAPH")
   fi
 
