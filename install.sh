@@ -23,4 +23,4 @@ else
 fi
 
 echo -e "\n  [#] Installation completed !"
-echo -e "\n - You can now run the script with the command 'sst'.\n"
+echo -e "\n - You can now run the script with the command '$APP_NAME'.\n"
