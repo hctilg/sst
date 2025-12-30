@@ -7,7 +7,7 @@ SCRIPT_URL="https://raw.githubusercontent.com/hctilg/sst/main/sst.sh"
 if [[ $(uname -o) == "Android" ]]; then # Termux
   INSTALL_PATH="/data/data/com.termux/files/usr/bin/$APP_NAME"
 
-  echo -e "\n  [#] Installing sst..."
+  echo -e "\n  [#] Installing $APP_NAME..."
   curl -s -o "$INSTALL_PATH" "$SCRIPT_URL"
 
   echo -e "\n  [#] Set executable permissions..."
@@ -15,7 +15,7 @@ if [[ $(uname -o) == "Android" ]]; then # Termux
 else
   INSTALL_PATH="/usr/local/bin/$APP_NAME"
 
-  echo -e "\n  [#] Installing sst..."
+  echo -e "\n  [#] Installing $APP_NAME..."
   sudo curl -s -o "$INSTALL_PATH" "$SCRIPT_URL"
 
   echo -e "\n  [#] Set executable permissions..."
